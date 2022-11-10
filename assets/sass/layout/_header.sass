@@ -1,0 +1,109 @@
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-weight: 500
+  color: $text-grey
+  padding: 1.5625rem
+  &__nav
+    display: flex
+    align-items: center
+    margin-left: auto
+    gap: 2.5rem
+    a
+      position: relative
+      &:hover::after
+        width: 100%
+      &::after
+        transition: .5s all
+        content: ""
+        background: $red
+        width: 0
+        height: .125rem
+        position: absolute
+        left: 0
+        bottom: 0
+    &-contact
+      padding: .75rem 1.4375rem
+      background: $red
+      border-radius: .375rem
+      margin-left: .5rem
+      color: $white
+      transition: .5s all
+      border: .125rem solid $red
+      &:hover
+        background: none
+        color: $red
+  &__dropdown
+    &-btn
+      position: relative
+      display: flex
+      align-items: center
+      gap: .625rem
+      transition: .5s all
+      cursor: pointer
+      ion-icon
+        transition: .5s all
+      &:hover
+        margin-bottom: 100px
+        .header__dropdown-list
+          max-height: 7.5rem
+          padding-top: .9375rem
+          padding-bottom: .9375rem
+        ion-icon
+          transform: rotate(180deg)
+    &-list
+      position: absolute
+      transition: .6s all
+      max-height: 0
+      width: max-content
+      padding: .9375rem
+      padding-top: 0
+      padding-bottom: 0
+      top: 1.875rem
+      width: 100%
+      display: flex
+      align-items: center
+      flex-direction: column
+      gap: .625rem
+      box-shadow: 0rem 0rem 1rem 0rem rgba(34, 60, 80, 0.13)
+      overflow: hidden
+
+.hamburger
+  display: none
+  padding: 0
+  &-inner
+    background: $red
+    &::after
+      background: $red
+    &::before
+      background: $green
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+  background: $red
+
+@media screen and ( max-width: 57.8125rem )
+  .hamburger
+    display: block
+    z-index: 3
+
+  .wrapper
+    position: relative
+    overflow: hidden
+  .header
+    box-sizing: border-box
+    &__nav
+      position: absolute
+      right: -100%
+      top: 0
+      padding: 2.8125rem 1.5625rem 1.5625rem 2.1875rem
+      background: $light-red
+      transition: .5s all
+      flex-direction: column
+      align-items: flex-start
+      min-height: 100vh
+      z-index: 2
+      &.is-active
+        right: 0
+      &-contact
+        margin-left: 0

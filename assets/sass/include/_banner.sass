@@ -1,0 +1,40 @@
+.banner
+  padding-left: 1.5625rem
+  padding-right: 1.5625rem
+  &__content
+    display: flex
+    align-items: center
+    margin-top: 3.4375rem
+    gap: 2.5rem
+  &__info
+    &-title
+      font-size: 3.25rem
+      width: 100%
+    &-desc
+      width: 100%
+      color: $grey
+  &__image
+    display: flex
+    align-items: center
+    gap: 2.8125rem
+
+@media screen and ( max-width: 55.3125rem )
+  .banner
+    &__content
+      flex-direction: column
+      gap: 2.8125rem
+    &__info
+      text-align: center
+      &-title
+        width: 100%
+        font-size: 28px
+      &-desc
+        width: 100%
+        margin-top: 1.5625rem
+    &__image
+      width: 100%
+      gap: .625rem
+      box-sizing: border-box
+      img
+        width: 40%
+        margin: 0 auto
