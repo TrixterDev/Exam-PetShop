@@ -134,7 +134,7 @@
   background: #F87661;
 }
 
-@media screen and (max-width: 57.8125rem) {
+@media (max-width: 57.8125rem) {
   .hamburger {
     display: block;
     z-index: 3;
@@ -189,7 +189,7 @@
   gap: 2.8125rem;
 }
 
-@media screen and (max-width: 55.3125rem) {
+@media (max-width: 55.3125rem) {
   .banner__content {
     flex-direction: column;
     gap: 2.8125rem;
@@ -213,6 +213,87 @@
   .banner__image img {
     width: 40%;
     margin: 0 auto;
+  }
+}
+.statistic {
+  margin-top: 5rem;
+  position: relative;
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+}
+.statistic__content {
+  border-radius: 0.875rem;
+  padding: 2.5rem;
+  background: url(../img/statistic/bg.svg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  gap: 2.1875rem;
+}
+.statistic__clients {
+  display: flex;
+  align-items: center;
+  gap: 3.125rem;
+}
+.statistic__clients-info span,
+.statistic__clients-info p {
+  color: #fff;
+}
+.statistic__clients-info p {
+  font-size: 2.25rem;
+}
+.statistic__shelter {
+  display: flex;
+  align-items: center;
+  gap: 2.1875rem;
+}
+.statistic__shelter-info h3,
+.statistic__shelter-info p {
+  color: #fff;
+  width: 100%;
+}
+
+.line {
+  border: none;
+  width: 0.0625rem;
+  height: 4.6875rem;
+  background: #fff;
+}
+
+.shadow {
+  width: 52.9375rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 12.25rem;
+  background: #F87661;
+  opacity: 0.5;
+  filter: blur(3.125rem);
+  position: absolute;
+  bottom: -1.875rem;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 55.3125rem) {
+  .statistic__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .line {
+    width: 100%;
+    height: 0.125rem;
+  }
+}
+@media (max-width: 31.25rem) {
+  .statistic__clients {
+    flex-direction: column;
+  }
+  .statistic__shelter {
+    flex-direction: column;
+  }
+  .statistic__shelter-info {
+    text-align: center;
   }
 }
 * {
