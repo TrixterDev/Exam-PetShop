@@ -43,15 +43,14 @@
       transition: .5s all
       cursor: pointer
       ion-icon
-        transition: .5s all
+      transition: .5s all
       &:hover
-        margin-bottom: 100px
         .header__dropdown-list
           max-height: 7.5rem
           padding-top: .9375rem
           padding-bottom: .9375rem
-        ion-icon
-          transform: rotate(180deg)
+          ion-icon
+            transform: rotate(180deg)
     &-list
       position: absolute
       transition: .6s all
@@ -86,12 +85,10 @@
   .hamburger
     display: block
     z-index: 3
-
   .wrapper
     position: relative
     overflow: hidden
   .header
-    box-sizing: border-box
     &__nav
       position: absolute
       right: -100%
@@ -107,3 +104,7 @@
         right: 0
       &-contact
         margin-left: 0
+    &__dropdown
+      &-btn
+        &:hover
+          margin-bottom: 100px

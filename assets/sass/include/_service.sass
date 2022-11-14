@@ -1,0 +1,82 @@
+.services
+  padding-left: 1.5625rem
+  padding-right: 1.5625rem
+  padding-bottom: 1.5625rem
+  margin-top: 4.6875rem
+  &__title
+    text-align: center
+    margin-bottom: 4.0625rem
+    h2
+      font-weight: 600
+      font-size: 3rem
+    p
+      color: $grey
+      width: 27%
+      margin-left: auto
+      margin-right: auto
+      margin-top: .625rem
+  &__cards
+    display: flex
+    align-items: center
+    gap: 2.375rem
+  &__card
+    border-radius: 1.875rem
+    padding: 2.875rem 1.875rem
+    display: flex
+    position: relative
+    align-items: center
+    justify-content: space-between
+    gap: 1.875rem
+    background: $light-red
+    &:last-child
+      background: $bg-linear-red
+      .services__card-content
+        > h3,
+        > p,
+        > a
+          color: $white
+    &-title
+      text-align: center
+    &-content
+      p
+        margin-top: .9375rem
+      a
+        margin-top: .9375rem
+        padding: .75rem 1rem
+        background: $red-dark
+        display: inline-block
+        color: $white
+        border-radius: .4375rem
+        border: .1875rem solid $red-dark
+        transition: .3s all
+        &:active
+          border: .1875rem solid #FDCEC6
+  &__shadow
+    width: 25rem
+    height: 12.25rem
+    position: absolute
+    z-index: -1
+    bottom: -1.25rem
+    left: -1.25rem
+    background: $red
+    opacity: 0.5
+    filter: blur(3.125rem)
+    border-radius: 1rem
+
+@include media (56.25rem)
+  .services
+    &__cards
+      flex-wrap: wrap
+    &__card
+      width: 100%
+    &__title
+      h2
+        font-size: 2rem
+      p
+        width: 70%
+
+@include media (27.8125rem)
+  .services
+    &__card
+      flex-direction: column
+      text-align: center
