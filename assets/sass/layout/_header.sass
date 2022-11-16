@@ -42,15 +42,18 @@
       gap: .625rem
       transition: .5s all
       cursor: pointer
-      ion-icon
-      transition: .5s all
+      .svg-icons
+        transition: .5s all
+        width: 1.0625rem
+        height: 1.0625rem
+        fill: none
       &:hover
+        .svg-icons
+          transform: rotate(180deg)
         .header__dropdown-list
           max-height: 7.5rem
           padding-top: .9375rem
           padding-bottom: .9375rem
-          ion-icon
-            transform: rotate(180deg)
     &-list
       position: absolute
       transition: .6s all

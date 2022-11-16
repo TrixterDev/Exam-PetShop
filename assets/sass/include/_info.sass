@@ -1,0 +1,68 @@
+.info
+  display: flex
+  align-items: center
+  flex-direction: column
+  gap: 4.0625rem
+  padding-left: 1.5625rem
+  padding-right: 1.5625rem
+  margin-top: 5.3125rem
+  &__line
+    border: none
+    width: 100%
+    height: 2px
+    background: $light-red
+  &__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    gap: 4.375rem
+    &-bg
+      width: 10.3125rem
+      height: 7.6875rem
+      background: $yelow
+      border-radius: 6.25rem
+      position: relative
+      display: flex
+      align-items: center
+    &-help
+      width: 53%
+      margin-left: auto
+      margin-right: auto
+      p
+        text-align: center
+        color: $grey
+        margin-bottom: .625rem
+      h3
+        font-size: 2.25rem
+        font-weight: 600
+        text-align: center
+    &-dogs
+      display: flex
+      width: max-content
+      align-items: center
+      > img
+        &:first-child
+          position: absolute
+          right: 3.125rem
+
+@include media (50rem)
+  .info
+    transform: translateX(0) !important
+    gap: 1.25rem
+    &__content
+      flex-direction: column
+      gap: .9375rem
+      width: 100%
+      p,
+      h3
+        width: 100%
+      h3
+        font-size: 1.5rem
+      &-bg
+        display: none
+      &-dogs
+        gap: 1.875rem
+        img
+          &:first-child
+            position: static
