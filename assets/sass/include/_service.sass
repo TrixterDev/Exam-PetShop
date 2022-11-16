@@ -66,18 +66,19 @@
 @include media (56.25rem)
   .services
     transform: translateX(0) !important
+    opacity: 1 !important
     &__cards
       flex-wrap: wrap
     &__card
       width: 100%
     &__title
+      margin-bottom: 25px
       h2
         font-size: 2rem
       p
         width: 70%
 @include media (27.8125rem)
   .services
-    transform: translateX(0) !important
     &__card
       flex-direction: column
       text-align: center
