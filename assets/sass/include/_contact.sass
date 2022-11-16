@@ -1,0 +1,36 @@
+.contact
+  background: url(../img/contact/bg.png) no-repeat
+  background-size: cover
+  width: 100%
+  &__info
+    padding-top: 5.625rem
+    padding-bottom: 5.625rem
+    padding-left: 1.5625rem
+    padding-right: 1.5625rem
+    > *
+      color: $white
+    h3
+      font-size: 3rem
+      width: 45%
+    p
+      width: 46%
+      margin-top: .9375rem
+    a
+      padding: .75rem 1.4375rem
+      background: $red
+      border-radius: .375rem
+      display: inline-block
+      border: .125rem solid $red
+      transition: .5s all
+      margin-top: .9375rem
+      &:hover
+        background: none
+@include media (62.1875rem)
+  .contact
+    &__info
+      text-align: center
+      h3,
+      p
+        width: 100%
+      h3
+        font-size: 1.75rem

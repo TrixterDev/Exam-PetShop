@@ -559,7 +559,55 @@
     font-size: 1rem;
   }
   .about__image {
+    object-fit: cover;
+    width: 60%;
+  }
+}
+.contact {
+  background: url(../img/contact/bg.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.contact__info {
+  padding-top: 5.625rem;
+  padding-bottom: 5.625rem;
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+}
+.contact__info > * {
+  color: #fff;
+}
+.contact__info h3 {
+  font-size: 3rem;
+  width: 45%;
+}
+.contact__info p {
+  width: 46%;
+  margin-top: 0.9375rem;
+}
+.contact__info a {
+  padding: 0.75rem 1.4375rem;
+  background: #FF9685;
+  border-radius: 0.375rem;
+  display: inline-block;
+  border: 0.125rem solid #FF9685;
+  transition: 0.5s all;
+  margin-top: 0.9375rem;
+}
+.contact__info a:hover {
+  background: none;
+}
+
+@media (max-width: 62.1875rem) {
+  .contact__info {
+    text-align: center;
+  }
+  .contact__info h3,
+.contact__info p {
     width: 100%;
+  }
+  .contact__info h3 {
+    font-size: 1.75rem;
   }
 }
 * {
