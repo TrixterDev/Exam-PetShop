@@ -567,6 +567,7 @@
   background: url(../img/contact/bg.png) no-repeat;
   background-size: cover;
   width: 100%;
+  margin-top: 5.3125rem;
 }
 .contact__info {
   padding-top: 5.625rem;
