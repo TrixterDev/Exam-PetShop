@@ -9,6 +9,7 @@
 @import include/statistic
 @import include/service
 @import include/info
+@import include/about
 
 *
   margin: 0
@@ -27,7 +28,8 @@
 html
   overflow-x: hidden
 
-.services.element-show
+.services.element-show,
+.about.element-show
   opacity: 1
   transition: .6s all
   transform: translateX(0)
@@ -38,11 +40,27 @@ html
   transition: .6s all
   transform: scale(1)
 
-.statistic,
-.info
+.statistic
   opacity: 0
   transform: scale(.5)
 
-.services
+.info
+  opacity: 0
+  transform: translateX(-34.375rem)
+
+.services,
+.about
   opacity: 0
   transform: translateX(34.375rem)
+
+@include media (62.5rem)
+  .services,
+  .about,
+  .info
+    opacity: 0
+    transform: scale(.5)
+  .statistic.element-show,
+  .info.element-show,
+  .services.element-show
+    opacity: 1
+    transform: scale(1)
