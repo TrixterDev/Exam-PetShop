@@ -11,6 +11,7 @@
 @import include/info
 @import include/about
 @import include/contact
+@import include/news
 
 *
   margin: 0
@@ -30,7 +31,8 @@ html
   overflow-x: hidden
 
 .services.element-show,
-.about.element-show
+.about.element-show,
+.news.element-show
   opacity: 1
   transition: .6s all
   transform: translateX(0)
@@ -45,23 +47,26 @@ html
   opacity: 0
   transform: scale(.5)
 
-.info
+.info,
+.news
   opacity: 0
-  transform: translateX(-34.375rem)
+  transform: translateX(-43.75rem)
 
 .services,
 .about
   opacity: 0
-  transform: translateX(34.375rem)
+  transform: translateX(43.75rem)
 
 @include media (62.5rem)
   .services,
   .about,
-  .info
+  .info,
+  .news
     opacity: 0
     transform: scale(.5)
   .statistic.element-show,
   .info.element-show,
-  .services.element-show
+  .services.element-show,
+  .news.element-show
     opacity: 1
     transform: scale(1)

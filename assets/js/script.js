@@ -38,6 +38,7 @@ let services = document.querySelectorAll('.services');
 let statistic = document.querySelectorAll('.statistic');
 let info = document.querySelectorAll('.info');
 let about = document.querySelectorAll('.about');
+let news = document.querySelectorAll('.news');
 for (let elm of services) {
   observer.observe(elm);
 };
@@ -48,5 +49,8 @@ for (let elm of info) {
   observer.observe(elm);
 };
 for (let elm of about) {
+  observer.observe(elm);
+};
+for (let elm of news) {
   observer.observe(elm);
 };
