@@ -39,6 +39,7 @@ let statistic = document.querySelectorAll('.statistic');
 let info = document.querySelectorAll('.info');
 let about = document.querySelectorAll('.about');
 let news = document.querySelectorAll('.news');
+let instagram = document.querySelectorAll('.instagram');
 for (let elm of services) {
   observer.observe(elm);
 };
@@ -52,5 +53,8 @@ for (let elm of about) {
   observer.observe(elm);
 };
 for (let elm of news) {
+  observer.observe(elm);
+};
+for (let elm of instagram) {
   observer.observe(elm);
 };

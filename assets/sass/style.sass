@@ -33,15 +33,16 @@ html
 
 .services.element-show,
 .about.element-show,
-.news.element-show
+.news.element-show,
+.instagram.element-show
   opacity: 1
-  transition: .6s all
+  transition: .4s all
   transform: translateX(0)
 
 .statistic.element-show,
 .info.element-show
   opacity: 1
-  transition: .6s all
+  transition: .4s all
   transform: scale(1)
 
 .statistic
@@ -54,20 +55,25 @@ html
   transform: translateX(-43.75rem)
 
 .services,
-.about
+.about,
+.instagram
   opacity: 0
   transform: translateX(43.75rem)
 
 @include media (62.5rem)
+  .news
+    margin-top: 2.1875rem
   .services,
   .about,
   .info,
-  .news
+  .news,
+  .instagram
     opacity: 0
-    transform: scale(.5)
+    transform: scale(.4)
   .statistic.element-show,
   .info.element-show,
   .services.element-show,
-  .news.element-show
+  .news.element-show,
+  .instagram.element-show
     opacity: 1
     transform: scale(1)
