@@ -180,8 +180,8 @@
 .footer__content {
   margin-top: 4.0625rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
-  gap: 4.6875rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
 }
 .footer__content-nav {
   display: flex;
