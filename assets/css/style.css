@@ -247,6 +247,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .footer__content-nav span {
+    margin-bottom: 1.25rem;
+  }
   .footer__content-nav-soc {
     margin: 0 auto;
   }
