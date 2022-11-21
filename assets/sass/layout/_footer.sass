@@ -10,13 +10,15 @@
   &__content
     margin-top: 4.0625rem
     display: grid
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
-    gap: 30px
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr))
+    gap: 75px
     &-nav
       display: flex
       flex-direction: column
       gap: 1.25rem
       align-items: flex-start
+      &:first-child
+        grid-column: span 2
       p
         color: $grey
       span
@@ -54,9 +56,10 @@
 @include media (39rem)
   .footer
     &__content
-      grid-template-columns: repeat(auto-fill, minmax(9.375rem, 1fr))
       &-nav
         text-align: center
+        &:first-child
+          grid-column: span 1
         img
           margin-left: auto
           margin-right: auto
