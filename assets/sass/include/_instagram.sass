@@ -1,0 +1,43 @@
+.instagram
+  padding-left: 1.5625rem
+  padding-right: 1.5625rem
+  margin-top: 5.3125rem
+  &__title
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 3rem
+    width: 100%
+    > span
+      color: $red
+      margin-left: .625rem
+  &__gallery
+    margin-top: 3.4375rem
+    display: grid
+    gap: 2.1875rem
+    grid-template-columns: repeat(auto-fill, minmax(8.75rem, 1fr))
+    width: 100%
+    img
+      width: 100%
+      height: 100%
+      &:first-child
+        grid-row: 1/3
+        grid-column: 1/3
+      &:nth-child(2)
+        grid-row: 1/3
+        grid-column: 3/5
+
+@include media (47.1875rem)
+  .instagram
+    &__title
+      font-size: 1.75rem
+      flex-direction: column
+      > span
+        margin: 0
+    &__gallery
+      margin-top: 2.1875rem
+      img
+        &:first-child,
+        &:nth-child(2)
+          grid-row: auto
+          grid-column: auto

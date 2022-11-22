@@ -1,0 +1,25 @@
+header.header.container
+  a.header__logo(href="")
+    img(src="assets/img/logo.svg", alt="")
+  nav.header__nav
+    a(href="") Home
+    a(href="") About
+    span.header__dropdown-btn(href="") Services
+      svg.svg-icons
+        use(href='./assets/img/icons/svg-sprite.svg#arrow')
+      .header__dropdown-list
+        a(href="") Link
+        a(href="") Link
+        a(href="") Link
+    span.header__dropdown-btn(href="") Pages
+      svg.svg-icons
+        use(href='./assets/img/icons/svg-sprite.svg#arrow')
+      .header__dropdown-list
+        a(href="") Link
+        a(href="") Link
+        a(href="") Link
+    a(href="") Cart
+    button.header__nav-contact(href="") Contact Us
+  button.hamburger.hamburger--collapse(type='button')
+    span.hamburger-box
+      span.hamburger-inner

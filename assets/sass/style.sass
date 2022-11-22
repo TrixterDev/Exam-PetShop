@@ -1,0 +1,79 @@
+@import var
+@import fonts
+@import mixin
+
+@import layout/header
+@import layout/footer
+
+@import include/banner
+@import include/statistic
+@import include/service
+@import include/info
+@import include/about
+@import include/contact
+@import include/news
+@import include/instagram
+
+*
+  margin: 0
+  padding: 0
+  text-decoration: none
+  color: inherit
+  box-sizing: border-box
+  font-family: $font
+  color: $black
+
+.container
+  max-width: 67.5rem
+  margin-left: auto
+  margin-right: auto
+
+html
+  overflow-x: hidden
+
+.services.element-show,
+.about.element-show,
+.news.element-show,
+.instagram.element-show
+  opacity: 1
+  transition: .4s all
+  transform: translateX(0)
+
+.statistic.element-show,
+.info.element-show
+  opacity: 1
+  transition: .4s all
+  transform: scale(1)
+
+.statistic
+  opacity: 0
+  transform: scale(.5)
+
+.info,
+.news
+  opacity: 0
+  transform: translateX(-43.75rem)
+
+.services,
+.about,
+.instagram
+  opacity: 0
+  transform: translateX(43.75rem)
+
+@include media (62.5rem)
+  .news
+    margin-top: 2.1875rem
+  .services,
+  .about,
+  .info,
+  .news,
+  .instagram
+    opacity: 0
+    transform: scale(.4)
+  .statistic.element-show,
+  .info.element-show,
+  .services.element-show,
+  .news.element-show,
+  .instagram.element-show
+    opacity: 1
+    transform: scale(1)

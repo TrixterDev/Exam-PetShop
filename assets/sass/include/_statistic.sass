@@ -1,0 +1,69 @@
+.statistic
+  margin-top: 5rem
+  position: relative
+  padding-left: 1.5625rem
+  padding-right: 1.5625rem
+  &__content
+    border-radius: .875rem
+    padding: 2.5rem
+    background: url(../img/statistic/bg.svg) no-repeat
+    background-size: cover
+    display: flex
+    align-items: center
+    gap: 2.1875rem
+  &__clients
+    display: flex
+    align-items: center
+    gap: 3.125rem
+    &-info
+      span,
+      p
+        color: $white
+      p
+        font-size: 2.25rem
+  &__shelter
+    display: flex
+    align-items: center
+    gap: 2.1875rem
+    &-info
+      h3,
+      p
+        color: $white
+        width: 100%
+.line
+  border: none
+  width: .0625rem
+  height: 4.6875rem
+  background: $white
+
+.shadow
+  width: 52.9375rem
+  margin-left: auto
+  margin-right: auto
+  height: 12.25rem
+  background: $red
+  opacity: .5
+  filter: blur(3.125rem)
+  position: absolute
+  bottom: -1.875rem
+  right: 0
+  left: 0
+  z-index: -1
+
+@include media (55.3125rem)
+  .statistic
+    &__content
+      flex-wrap: wrap
+      justify-content: center
+  .line
+    width: 100%
+    height: .125rem
+
+@include media (31.25rem)
+  .statistic
+    &__clients
+      flex-direction: column
+    &__shelter
+      flex-direction: column
+      &-info
+        text-align: center

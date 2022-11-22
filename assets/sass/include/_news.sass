@@ -1,0 +1,60 @@
+.news
+  margin-top: 11.5625rem
+  padding-left: 1.5625rem
+  padding-right: 1.5625rem
+  &__title
+    font-size: 3rem
+    text-align: center
+  &__subtitle
+    color: $grey
+    margin-top: 1.25rem
+    text-align: center
+    width: 46%
+    margin-left: auto
+    margin-right: auto
+  &__cards
+    margin-top: 4.0625rem
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(19.0625rem, 1fr))
+    align-items: center
+    justify-content: center
+    gap: 2.1875rem
+  &__card
+    img
+      border-radius: 1.875rem
+      width: 100%
+    h3
+      font-size: 1.25rem
+      color: $text-grey
+      margin-top: 1.25rem
+    p
+      color: $text-grey
+      margin-top: .625rem
+    a
+      padding: .75rem 1rem
+      display: inline-block
+      background: $red-dark
+      color: $white
+      margin-top: 1.25rem
+      border-radius: .375rem
+      border: .1875rem solid $red-dark
+      font-size: .875rem
+      transition: .3s all
+      &:active
+        border: .1875rem solid #FDCEC6
+      &:hover
+        background: none
+        color: $red-dark
+
+@include media (44.125rem)
+  .news
+    &__title
+      font-size: 1.625rem
+    &__subtitle
+      width: 100%
+    &__cards
+      grid-template-columns: repeat(auto-fill, minmax(14.375rem, 1fr))
+      gap: 3.125rem
+    &__card
+      width: 100%
+      text-align: center

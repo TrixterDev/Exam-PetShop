@@ -1,0 +1,73 @@
+.about
+  margin-top: 5.3125rem
+  padding-left: 1.5625rem
+  padding-right: 1.5625rem
+  &__content
+    display: flex
+    align-items: center
+    gap: 5.9375rem
+    padding: 2.8125rem 5.9375rem
+    background: $light-green
+    border-radius: 3.125rem
+  &__info
+    h3
+      font-size: 3rem
+      width: 60%
+    p
+      color: $grey
+      margin-top: .625rem
+      margin-bottom: 1.875rem
+    &-select
+      display: flex
+      align-items: flex-start
+      flex-direction: column
+      gap: 1.25rem
+      &-btn
+        display: flex
+        position: relative
+        align-items: center
+        input
+          opacity: 0
+        input:checked + label::before
+          background: url(../img/icons/allright.svg) no-repeat $green
+          background-position: center
+        label
+          font-size: 1.25rem
+          font-weight: 600
+          margin-left: 1.875rem
+          display: flex
+          align-items: center
+          &::before
+            border-radius: .3125rem
+            content: ""
+            transition: .2s all
+            width: 1.25rem
+            height: 1.25rem
+            border: .0625rem solid $green
+            left: 0
+            position: absolute
+  &__image
+    border-radius: 12.5rem
+
+@include media (61.5625rem)
+  .about
+    &__content
+      flex-direction: column
+      gap: 2.5rem
+      padding: 2.1875rem
+    &__info
+      h3
+        width: 100%
+        text-align: center
+        font-size: 1.625rem
+      p
+        width: 100%
+        text-align: center
+      &-select
+        &-btn
+          label
+            width: 100%
+            font-size: 1rem
+    &__image
+      object-fit: cover
+      width: 60%
