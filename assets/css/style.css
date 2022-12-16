@@ -47,6 +47,9 @@
   margin-left: auto;
   gap: 2.5rem;
 }
+.header__nav > button {
+  cursor: pointer;
+}
 .header__nav a {
   position: relative;
 }
@@ -246,7 +249,7 @@
     margin-right: auto;
   }
   .footer__content-nav a,
-.footer__content-nav span {
+  .footer__content-nav span {
     margin-left: auto;
     margin-right: auto;
   }
@@ -558,7 +561,7 @@
     width: 100%;
   }
   .info__content p,
-.info__content h3 {
+  .info__content h3 {
     width: 100%;
   }
   .info__content h3 {
@@ -701,7 +704,7 @@
     text-align: center;
   }
   .contact__info h3,
-.contact__info p {
+  .contact__info p {
     width: 100%;
   }
   .contact__info h3 {
@@ -892,18 +895,18 @@ html {
     margin-top: 2.1875rem;
   }
   .services,
-.about,
-.info,
-.news,
-.instagram {
+  .about,
+  .info,
+  .news,
+  .instagram {
     opacity: 0;
     transform: scale(0.4);
   }
   .statistic.element-show,
-.info.element-show,
-.services.element-show,
-.news.element-show,
-.instagram.element-show {
+  .info.element-show,
+  .services.element-show,
+  .news.element-show,
+  .instagram.element-show {
     opacity: 1;
     transform: scale(1);
   }
